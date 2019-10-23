@@ -87,9 +87,9 @@
     <Content Include="dict.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HelperClassLibrary1\HelperClassLibrary.csproj">
-      <Project>{19decaaa-0116-4edd-81b1-20b621445093}</Project>
-      <Name>HelperClassLibrary</Name>
+    <ProjectReference Include="HelperSpeechRecognizer\HelperSpeechRecognizer.csproj">
+      <Project>{33317033-b622-49d3-a2be-2a76708b5241}</Project>
+      <Name>HelperSpeechRecognizer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

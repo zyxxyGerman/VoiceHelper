@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using HelperClassLibrary;
+using HelperSpeechRecognizer;
 using Microsoft.Speech.Recognition;
 
 namespace helperform

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helperform", "helperform.csproj", "{B718EC4D-FA7D-404E-A21A-04E868EF3CB4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelperClassLibrary", "..\HelperClassLibrary1\HelperClassLibrary.csproj", "{19DECAAA-0116-4EDD-81B1-20B621445093}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperSpeechRecognizer", "HelperSpeechRecognizer\HelperSpeechRecognizer.csproj", "{33317033-B622-49D3-A2BE-2A76708B5241}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{B718EC4D-FA7D-404E-A21A-04E868EF3CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B718EC4D-FA7D-404E-A21A-04E868EF3CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B718EC4D-FA7D-404E-A21A-04E868EF3CB4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{19DECAAA-0116-4EDD-81B1-20B621445093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{19DECAAA-0116-4EDD-81B1-20B621445093}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{19DECAAA-0116-4EDD-81B1-20B621445093}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{19DECAAA-0116-4EDD-81B1-20B621445093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33317033-B622-49D3-A2BE-2A76708B5241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33317033-B622-49D3-A2BE-2A76708B5241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33317033-B622-49D3-A2BE-2A76708B5241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33317033-B622-49D3-A2BE-2A76708B5241}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
