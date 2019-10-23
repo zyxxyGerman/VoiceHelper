@@ -50,15 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\CloseProgramm.cs" />
-    <Compile Include="Commands\OpenCoursesCommand.cs" />
-    <Compile Include="Commands\OpenFacebookCommand.cs" />
-    <Compile Include="Commands\ICommand.cs" />
-    <Compile Include="Commands\OpenGoogleCommand.cs" />
-    <Compile Include="Commands\OpenMs45Command.cs" />
-    <Compile Include="Commands\OpenSearchCommand.cs" />
-    <Compile Include="Commands\OpenYandexCommand.cs" />
-    <Compile Include="Commands\OpenYouTubeCommand.cs" />
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +85,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="dict.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelperClassLibrary1\HelperClassLibrary.csproj">
+      <Project>{19decaaa-0116-4edd-81b1-20b621445093}</Project>
+      <Name>HelperClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

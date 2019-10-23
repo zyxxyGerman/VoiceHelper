@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HelperClassLibrary;
 using Microsoft.Speech.Recognition;
 
 namespace helperform
@@ -26,7 +27,7 @@ namespace helperform
             if (e.Result.Confidence > 0.7)
             {
                 label1.Text = e.Result.Text;
-                var command = Program.Commands.Where(c => c.Command.Equals(e.Result.Text)).FirstOrDefault();
+                var command = CommandList.Commands.Where(c => c.Command.Equals(e.Result.Text)).FirstOrDefault();
                 if(command != null)
                 {
                     command.Execute();

@@ -1,5 +1,4 @@
-﻿using helperform.Commands;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,18 +8,6 @@ namespace helperform
 {
     public static class Program
     {
-        public static List<ICommand> Commands = new List<ICommand>
-            {
-             new OpenGoogleCommand()
-            ,new OpenFacebookCommand()
-            ,new OpenYouTubeCommand()
-            ,new OpenYandexCommand()
-            ,new OpenMs45Command()
-            ,new OpenCoursesCommand()
-            ,new OpenSearchCommand()
-            ,new CloseProgramm()
-            };
-
         [STAThread]
         static void Main(String[] agrs)
         {
