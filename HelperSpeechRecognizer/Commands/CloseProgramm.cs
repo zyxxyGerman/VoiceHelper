@@ -12,7 +12,7 @@ namespace HelperSpeechRecognizer.Commands
 
         public void Execute()
         {
-            Process.Start("Application.Exit();");
+            Process.GetCurrentProcess().Close();
         }
     }
 }

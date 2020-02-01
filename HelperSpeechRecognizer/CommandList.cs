@@ -9,7 +9,6 @@ namespace HelperSpeechRecognizer
     {
         public static List<ICommand> Commands = new List<ICommand>
             {
-
              new OpenGoogleCommand()
             ,new OpenFacebookCommand()
             ,new OpenYouTubeCommand()
@@ -17,6 +16,7 @@ namespace HelperSpeechRecognizer
             ,new OpenMs45Command()
             ,new OpenCoursesCommand()
             ,new OpenSearchCommand()
+            ,new OpenVkCommand()
             ,new CloseProgramm()
             };
     }
