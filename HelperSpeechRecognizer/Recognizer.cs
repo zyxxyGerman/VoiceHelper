@@ -18,13 +18,18 @@ namespace HelperSpeechRecognizer
         {
             SpeechRecognitionEngine sre = new SpeechRecognitionEngine(CultureInfo.GetCultureInfo("ru-ru"));// To do сделать распознование на основе языка винды
             sre.SetInputToDefaultAudioDevice();
-            //var dictionaryRu = File.ReadAllText(@"Dictionary/ru-ru.txt", Encoding.UTF8).Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            var dictionaryRu = File.ReadAllText(@"Dictionary/ru-ru3.txt", Encoding.UTF8).Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            for(int i = 0; i < dictionaryRu.Count; i++)
+            {
+                dictionaryRu[i] = dictionaryRu[i].Trim();
+            }
 
             sre.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(sre_SpeechRecognized);
 
             GrammarBuilder gb = new GrammarBuilder();
-            gb.Append(new Choices(CommandList.Commands.Select(c => c.Command).ToArray()));
-            //gb.Append(new Choices(dictionaryRu));
+            var commands = CommandList.Commands.Select(c => c.Command).ToArray();
+
+            gb.Append(new Choices(dictionaryRu.Concat(commands).ToArray()));
             sre.LoadGrammar(new Grammar(gb));
 
             sre.RecognizeAsync(RecognizeMode.Multiple);
